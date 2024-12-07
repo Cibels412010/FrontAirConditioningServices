@@ -1,0 +1,251 @@
+/* General Reset */
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    text-align: center; 
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+.header {
+    background-color: #314b57;
+    color: #fff;
+    text-align: flex-start;
+    font-family: 'Roboto Slab', serif;
+    flex-wrap: wrap; 
+}
+
+.header h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-bottom: 0;
+    padding: 10px;
+    text-align: left;
+}
+
+.mapa{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.header-content {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.services-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-item {
+    text-align: center;
+    flex: 1;
+    max-width: 150px;
+}
+
+.service-item img {
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.service-item p {
+    text-align: center; 
+    max-width: 150px; 
+    margin: 0 auto; 
+    font-size: 1rem;
+}
+
+.main {
+    padding: 10px 10px;
+}
+
+.service-area {
+    margin-bottom: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.service-area h1 {
+    font-size: 2.5rem;
+    color: #ab3c3c;
+    margin-bottom: 0px;
+    font-family: 'Roboto slab';
+    text-align: left;
+    
+}
+
+.service-titulo{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: start;
+    flex-wrap: wrap; 
+    text-align: left;
+}
+.service-area-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+    
+}
+
+ .cityscape-img{
+    flex-shrink: 0;
+    max-width: 300px; 
+    border: 1px solid #ddd;
+    margin-right: 20px; 
+} 
+
+.text-container{
+    flex: 1;
+    max-width: 600px; 
+    padding: 10px;
+}
+
+
+.service-area-content p {
+    margin-bottom: 15px;
+    font-size: small;
+}
+
+.service-area-content a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #a12e2e;
+    font-size: small;
+}
+
+/* Articles */
+.articles {
+    padding: 0;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: start;
+    flex-wrap: wrap; 
+    text-align: left;
+
+}
+
+.articles h2 {
+    font-size: 1.8rem;
+    color: #ab3c3c;
+    margin-bottom: 0px;
+    text-align: left;
+    font-family: 'Roboto slab', serif;
+}
+
+.article-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.article-item {
+    flex: 1 1 calc(30% - 5%);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+    padding: 15px;
+}
+
+.article-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.article-item p {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.article-item span {
+    color: #ab3c3c;
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: #2b4d57;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column; 
+        align-items: center;
+        padding: 5px;
+        
+    }
+    .nav-item {
+        flex: 1 1 calc(30% - 10px); /* Ajustar tamaño de cada ítem */
+        max-width: calc(30% - 10px); /* Mantener espacio entre columnas */
+    }
+    .mapa {
+        width: 90%; /* El mapa ocupa todo el ancho */
+        order: 3; /* Cambia su posición en el flujo */
+        margin-top: 20px; /* Espacio con el contenido superior */
+    }
+
+    .service-area-content {
+        flex-direction: column; 
+        text-align: left;
+    }
+    .main h1, .articles h2 {
+        font-size: 1.5rem;
+    }
+    .header h2 {
+        margin: 10px 0; 
+        font-size: 1rem; 
+    }
+    .articles {
+        padding: 0 10px;
+    }
+
+    .article-item {
+        flex: 1 1 100%; 
+    }
+}
